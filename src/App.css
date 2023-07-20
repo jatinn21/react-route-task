@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 10rem;
+  min-width: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 5rem;
+  width: 10%;
+  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/minimalist-logo_P3b_690x450?$pjpeg$&jpegSize=200&wid=690");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.links {
+  /* height: 100%; */
+  /* width: 30%; */
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  cursor: pointer;
+  margin-right: 2rem;
+  border-bottom: 1px solid transparent;
+  transition: all 1s;
+}
+.link:hover {
+  border-bottom: 1px solid rgb(41, 40, 40);
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#home,
+#about,
+#contact {
+  height: 60rem;
+  background-color: rgb(86, 84, 84);
+  font-size: 5rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+/* Responsive----DON'T CROSS */
+@media (min-width: 350px) {
+  body {
+  }
+  html {
+    font-size: 50%;
+  }
+  #home,
+  #about,
+  #contact {
+    height: 60rem;
+    background-color: rgb(86, 84, 84);
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 390px) {
+  body {
+  }
+}
+
+@media (min-width: 280px) {
+  body {
+  }
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (min-width: 540px) {
+  body {
+  }
+  html {
+    font-size: 40%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+  }
+  html {
+    font-size: 50%;
+  }
+  .logo {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .logo {
+    height: 8rem;
+    background-size: contain;
+  }
+}
